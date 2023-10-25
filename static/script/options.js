@@ -280,7 +280,7 @@ async function options(app) {
                         }
                     }
                 }),
-                app.createElement('p', 'Change the title of Incognito\'s browser tab title.', {
+                app.createElement('p', 'Change the title of nito\'s browser tab title.', {
                     style: {
                         'margin-bottom': '0'
                     }
@@ -311,7 +311,7 @@ async function options(app) {
                         }
                     }
                 }),
-                app.createElement('p', 'Change the icon of Incognito\'s browser tab. To change it into something like Google, type in "https://www.google.com/favicon.ico"', {
+                app.createElement('p', 'Change the icon of nito\'s browser tab. To change it into something like Google, type in "https://www.google.com/favicon.ico"', {
                     style: {
                         'margin-bottom': '0'
                     }
@@ -391,7 +391,7 @@ The about:blank script is based off of ABC by
                         }
                     }
                 }),
-                app.createElement('p', 'The URL that Incognito redirects to when using about:blank.', {
+                app.createElement('p', 'The URL that nito redirects to when using about:blank.', {
                     style: {
                         'margin-bottom': '0'
                     }
@@ -619,7 +619,6 @@ async function createAbout(app) {
 };
 
 async function tabURL(url) {
-    // A mess of code from Tsunami 2.0 and HolyUB modified to work with Incognito
     const res = await app.bare.fetch(url);
     const parsedURL = new URL(res.finalURL);
     var dom = new DOMParser().parseFromString(await res.text(), "text/html");

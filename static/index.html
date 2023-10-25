@@ -1,24 +1,10 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <!--
-    Incognito
-    This program is free software: you can redistribute it and/or modify
-    it under the terms of the GNU General Public License as published by
-    the Free Software Foundation, either version 3 of the License, or
-    (at your option) any later version.
 
-    This program is distributed in the hope that it will be useful,
-    but WITHOUT ANY WARRANTY; without even the implied warranty of
-    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-    GNU General Public License for more details.
-
-    You should have received a copy of the GNU General Public License
-    along with this program.  If not, see <https://www.gnu.org/licenses/>.
-        -->
         <meta name="description" content="Access the world wide web">
         <!-- Open Graph tags -->
-        <meta property="og:title" content="Incognito">
+        <meta property="og:title" content="nito">
         <meta property="og:description" content="Access the world wide web">
         <meta property="og:image" content="/img/social-preview.png">
         <!-- End Open Graph Tags -->
@@ -27,9 +13,6 @@
         <link rel="icon" href="" id="favicon">
         <script src="./script/particles.js"></script>
             <script async>
-            // Incognito analytics
-            // Only tracks user visits!
-            // Remove when needed.
             navigator.sendBeacon('./data/visit');
             (async() => {
                 const res = await fetch('./data/create-id');
